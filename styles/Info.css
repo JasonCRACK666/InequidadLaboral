@@ -15,14 +15,18 @@ body.dark .Info {
   align-items: flex-start;
 }
 
+.Info .information .cont {
+  position: relative;
+}
 
 .Info .information .cont img {
   position: absolute;
   content: "";
-  top: 65px;
-  left: 194px;
+  top: 0px;
+  left: 0px;
   width: 400px;
   z-index: 1;
+  transform: translateX(-120px) translateY(35px);
 }
 
 .Info .information .cont .cont-inf {
@@ -85,6 +89,7 @@ body.dark .Info .information .cont .cont-inf p {
   transition: .5s;
   width: 350px;
   height: 233px;
+  z-index: 1;
 }
 
 .Info .galery .box img {
@@ -93,7 +98,7 @@ body.dark .Info .information .cont .cont-inf p {
 } 
 
 .Info .galery .box:hover {
-  z-index: 1;
+  z-index: 10;
   transform: scale(1.15);
   box-shadow: 0 25px 40px rgba(0,0,0,.5);
 }

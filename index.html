@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="./styles/AnimationCards.css">
   <link rel="stylesheet" href="./styles/Reflect.css">
   <link rel="stylesheet" href="./styles/normalize.css">
+  <link rel="stylesheet" href="./styles/Responsive.css">
   <title>InequidadLaboral</title>
 </head>
 <body>
@@ -45,10 +46,8 @@
       <!-- Landin Page -->
       <div class="presentation">
         <div id="imagen-lp" class="imagen">
-          <img src="./img/undraw_city_girl_ccpd 1.svg" alt="img1">
-        </div>
-        <div id="title-lp" class="titulo">
-          <img src="./img/LA INEQUIDAD LABORAL.svg" alt="titlePrimary">
+          <img class="fondo" src="./img/undraw_city_girl_ccpd 1.svg" alt="img1">
+          <img id="titulo" class="titulo" src="./img/LA INEQUIDAD LABORAL.svg" alt="titlePrimary">
         </div>
       </div>
     </div>
@@ -199,7 +198,7 @@
       delay: .4
     });
 
-    gsap.from('#title-lp', {
+    gsap.from('#titulo', {
       duration: 1,
       y: 50,
       ease: 'linear',

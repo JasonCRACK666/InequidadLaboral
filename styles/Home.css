@@ -165,14 +165,17 @@ body.dark .navBar .links li a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
-.Home .presentation .imagen img {
-  width: 1000px;
-}
-
-.Home .presentation .titulo {
+.Home .presentation .imagen .titulo {
+  width: 420px;
   position: absolute;
-  top: 220px;
-  right: 420px;
+  top: 40%;
+  left: 48%;
+  z-index: 10;
+}
+
+.Home .presentation .imagen .fondo {
+  width: 1100px;
 }

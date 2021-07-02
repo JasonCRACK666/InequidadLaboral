@@ -1,0 +1,46 @@
+/* Home */
+@media screen and (max-width: 1280px){
+  .Home .presentation .imagen .fondo {
+    width: 950px;
+  }
+  .Home .presentation .imagen .titulo {
+    width: 360px;
+  }
+}
+
+/* Info */
+@media screen and (max-width: 1280px) {
+  .Info .information .cont .cont-inf h2 {
+    font-size: 30px;
+  }
+  .Info .information .cont .cont-inf p {
+    font-size: 17px;
+  }
+  .Info .information .img-inf img {
+    width: 370px;
+    margin-left: 20px;
+  }
+  .Info .information .cont img {
+    width: 365px;
+  }
+  .Info .galery .box {
+    width: 300px;
+    height: 202px;
+  }
+  .Info .galery .box img {
+    width: 300px;
+  }
+}
+
+/* Reflexión */
+@media screen and (max-width: 1280px) {
+  .Reflect .question .img-q img {
+    width: 590px;
+  }
+  .Reflect .question .quest h3 {
+    font-size: 34px;
+  }
+  .Reflect .question .quest p {
+    font-size: 19px;
+  }
+}
