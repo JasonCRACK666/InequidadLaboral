@@ -1,0 +1,145 @@
+.Reflect {
+  height: 100vh;
+  background: #F6F6F6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+
+body.dark .Reflect {
+  background: #0C0E12;
+}
+
+.Reflect .question {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.Reflect .question .img-q img {
+  width: 700px;
+  z-index: 10;
+}
+
+.Reflect .question .quest {
+  width: 500px;
+  margin-left: 20px;
+  z-index: 10;
+}
+
+body.dark .Reflect .question .quest {
+  color: #fff;
+}
+
+.Reflect .question .quest h3 {
+  font-size: 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  margin: 0;
+  z-index: 10;
+}
+
+.Reflect .question .quest p {
+  font-size: 20px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 900;
+  margin: 0;
+  z-index: 1;
+}
+
+/* FRASE FINAL */
+.Reflect .ultimateQuest {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 40px;
+  z-index: 10;
+}
+
+.Reflect .ultimateQuest h2 {
+  width: 1200px;
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  margin: 0;
+  color: #9700FF;
+  z-index: 10;
+}
+
+body.dark .Reflect .ultimateQuest h2 {
+  color: #1E69FF;
+}
+
+.Reflect .ultimateQuest button {
+  margin-top: 75px;
+  border-radius: 50%;
+  padding: 20px;
+  border: none;
+  background: linear-gradient(to left, #1E69FF, #9700FF);
+  cursor: pointer;
+}
+
+.Reflect .ultimateQuest button:hover {
+  animation-name: sacudir;
+  animation-duration: 2s;
+}
+
+.Reflect .ultimateQuest button i {
+  width: 20px;
+  color: #fff;
+}
+
+.Reflect:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to left bottom, #1E69FF, #1e69ff65);
+  clip-path: circle(20% at 88% 20%);
+}
+
+body.dark .Reflect:before {
+  background: linear-gradient(to left bottom, #9700FF, #9900ff60);
+}
+
+.Reflect::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #9900ff85, #9900ff 40%);
+  clip-path: circle(12% at 50% 100%);
+}
+
+body.dark .Reflect::after {
+  background: linear-gradient(to top, #1e69ff50, #1E69FF 40%);
+}
+
+@keyframes sacudir {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(40deg);
+  }
+  40% {
+    transform: rotate(-40deg);
+  }
+  60% {
+    transform: rotate(40deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+

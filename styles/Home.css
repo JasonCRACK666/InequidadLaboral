@@ -1,0 +1,178 @@
+/* --------------------------------------------------------------------------- */
+/* --------------------------------- GLOBALS --------------------------------- */
+/* --------------------------------------------------------------------------- */
+
+.Home {
+  height: 100vh;
+  position: relative;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* --------------------------------------------------------------------------- */
+/* --------------------------------- CIRCLES --------------------------------- */
+/* --------------------------------------------------------------------------- */
+
+.Home::before {
+  content: "";
+  background: linear-gradient(to bottom right, #1E69FF 10%, rgba(30, 105, 255, 0.096) 70%);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  clip-path: circle(15% at 20% 25%);
+}
+
+body.dark .Home::before {
+  background: linear-gradient(to bottom right, #9700FF 10%, rgba(153, 0, 255, 0.094) 70%);
+}
+
+.Home::after {
+  content: "";
+  background: linear-gradient(to top left, #9700FF 10%, rgba(153, 0, 255, 0.096) 40%);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  clip-path: circle(15% at 85% 85%);
+}
+
+body.dark .Home::after {
+  background: linear-gradient(to top left, #1E69FF 10%, rgba(30, 105, 255, 0.26) 40%);
+}
+
+/* --------------------------------------------------------------------------- */
+/* --------------------------------- NAVBAR ---------------------------------- */
+/* --------------------------------------------------------------------------- */
+
+.Home .navBar {
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1;
+}
+
+/* Aqui va el espaciado para centrar la barra de navegación */
+.Home .navBar .space {
+  width: 72px;
+  content: "";
+  height: 32px;
+}
+
+/* LA BARRA DE NAVEGACION */
+.Home .navBar .links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.Home .navBar .links li {
+  list-style: none;
+  padding-left: 15px;
+}
+
+.Home .navBar .links li:first-child {
+  list-style: none;
+  padding-left: 0;
+}
+
+.Home .navBar .links li a {
+  text-decoration: none;
+  padding: 9px 15px;
+  color: #000;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 1000;
+  border-radius: 15px;
+  transition: .2s ease-in-out;
+}
+
+.Home .navBar .links li a:hover {
+  background: #9700FF;
+}
+
+/* SWITCH Mode */
+.Home .navBar .mode .switch {
+  position: relative;
+  background: #04050D;
+  border-radius: 1000px;
+  cursor: pointer;
+  display: flex;
+  outline: none;
+  border: none;
+}
+
+.Home .navBar .mode .switch::after {
+  display: block;
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background: #f1f1f1;
+  top: 0;
+  left: 0;
+  right: unset;
+  border-radius: 50%;
+  transition: .3s ease all;
+  box-shadow: 0 0 2px 2px rgb(0, 0, 0, .2);
+}
+.Home .navBar .mode .active {
+  background: orange;
+  color: #000;
+}
+.Home .navBar .mode .active::after {
+  right: 0;
+  left: unset;
+}
+.Home .navBar .mode .switch span {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  background: none;
+  color: #fff;
+}
+
+/* STYLES MODE DARK */
+body.dark .Home {
+  background: #04050D;
+}
+
+body.dark .navBar .links li a {
+  color: #fff;
+}
+
+body.dark .navBar .links li a:hover {
+  background: #1E69FF;
+}
+
+/* --------------------------------------------------------------------------- */
+/* ------------------------------ LANDING PAGE ------------------------------- */
+/* --------------------------------------------------------------------------- */
+
+.Home .presentation {
+  position: relative;
+  z-index: 2;
+}
+
+.Home .presentation .imagen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Home .presentation .imagen img {
+  width: 1000px;
+}
+
+.Home .presentation .titulo {
+  position: absolute;
+  top: 220px;
+  right: 420px;
+}

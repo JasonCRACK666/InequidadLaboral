@@ -1,0 +1,271 @@
+/* CARD 1 */
+.Solutions .centrado .cards .card1 p {
+  transform: translateY(-90px);
+}
+
+.Solutions .centrado .cards .card1::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #9700FF;
+  clip-path: ellipse(115px 60px at 50% 0px);
+  border-radius: 20px;
+  transition: .4s;
+}
+
+.Solutions .centrado .cards .card1::after {
+  content: "1#";
+  position: absolute;
+  top: 100px;
+  left: 48px;
+  font-size: 100px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  color: rgba(87, 87, 87, 0.548);
+  opacity: 1;
+  transition: .2s;
+}
+
+.Solutions .centrado .cards .card1:hover::before {
+  clip-path: ellipse(250px 270px at 50% 0px);
+}
+
+.Solutions .centrado .cards .card1:hover p {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.Solutions .centrado .cards .card1:hover::after {
+  opacity: 0;
+}
+
+/* CARD 2 */
+.Solutions .centrado .cards .card2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #1E69FF;
+  clip-path: ellipse(60px 150px at 0% 50%);
+  border-radius: 20px;
+  transition: .4s;
+}
+
+.Solutions .centrado .cards .card2 p {
+  transform: translateX(-45px);
+}
+
+.Solutions .centrado .cards .card2::after {
+  content: "2#";
+  position: absolute;
+  top: 100px;
+  left: 36px;
+  font-size: 100px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  color: rgba(87, 87, 87, 0.548);
+  opacity: 1;
+  transition: .2s;
+}
+
+.Solutions .centrado .cards .card2:hover::before {
+  clip-path: ellipse(195px 250px at 0% 50%);
+}
+
+.Solutions .centrado .cards .card2:hover p {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.Solutions .centrado .cards .card2:hover::after {
+  opacity: 0;
+}
+
+
+/* CARD 3 */
+.Solutions .centrado .cards .card3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #9700FF;
+  clip-path: ellipse(150px 60px at 50% 105%);
+  border-radius: 20px;
+  transition: .4s;
+}
+
+.Solutions .centrado .cards .card3 p {
+  transform: translateY(85px);
+}
+
+.Solutions .centrado .cards .card3::after {
+  content: "3#";
+  position: absolute;
+  top: 100px;
+  left: 30px;
+  font-size: 100px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  color: rgba(87, 87, 87, 0.548);
+  opacity: 1;
+  transition: .2s;
+}
+
+.Solutions .centrado .cards .card3:hover::before {
+  clip-path: ellipse(300px 280px at 50% 105%);
+}
+
+.Solutions .centrado .cards .card3:hover p {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.Solutions .centrado .cards .card3:hover::after {
+  opacity: 0;
+}
+
+
+/* CARD 4 */
+.Solutions .centrado .cards .card4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #1E69FF;
+  clip-path: ellipse(60px 150px at 100% 50%);
+  border-radius: 20px;
+  transition: .4s;
+}
+
+.Solutions .centrado .cards .card4 p {
+  transform: translateX(55px);
+}
+
+.Solutions .centrado .cards .card4::after {
+  content: "4#";
+  position: absolute;
+  top: 100px;
+  left: 30px;
+  font-size: 100px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  color: rgba(87, 87, 87, 0.548);
+  opacity: 1;
+  transition: .2s;
+}
+
+.Solutions .centrado .cards .card4:hover::before {
+  clip-path: ellipse(180px 300px at 100% 50%);
+}
+
+.Solutions .centrado .cards .card4:hover p {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.Solutions .centrado .cards .card4:hover::after {
+  opacity: 0;
+}
+
+/* CARD 5 */
+.Solutions .centrado .cards .card5 p {
+  transform: translateY(-90px);
+}
+
+.Solutions .centrado .cards .card5::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #9700FF;
+  clip-path: ellipse(115px 60px at 50% 0px);
+  border-radius: 20px;
+  transition: .4s;
+}
+
+.Solutions .centrado .cards .card5::after {
+  content: "5#";
+  position: absolute;
+  top: 100px;
+  left: 30px;
+  font-size: 100px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  color: rgba(87, 87, 87, 0.548);
+  opacity: 1;
+  transition: .2s;
+}
+
+.Solutions .centrado .cards .card5:hover::before {
+  clip-path: ellipse(250px 270px at 50% 0px);
+}
+
+.Solutions .centrado .cards .card5:hover p {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.Solutions .centrado .cards .card5:hover::after {
+  opacity: 0;
+}
+
+/* CARD 6 */
+.Solutions .centrado .cards .card6::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #1E69FF;
+  clip-path: ellipse(60px 150px at 0% 50%);
+  border-radius: 20px;
+  transition: .4s;
+}
+
+.Solutions .centrado .cards .card6 p {
+  transform: translateX(-45px);
+}
+
+.Solutions .centrado .cards .card6::after {
+  content: "6#";
+  position: absolute;
+  top: 100px;
+  left: 30px;
+  font-size: 100px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  color: rgba(87, 87, 87, 0.548);
+  opacity: 1;
+  transition: .2s;
+}
+
+.Solutions .centrado .cards .card6:hover::before {
+  clip-path: ellipse(195px 250px at 0% 50%);
+}
+
+.Solutions .centrado .cards .card6:hover p {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.Solutions .centrado .cards .card6:hover::after {
+  opacity: 0;
+}

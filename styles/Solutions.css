@@ -1,0 +1,95 @@
+.Solutions {
+  position: relative;
+  height: 100vh;
+}
+
+body.dark .Solutions {
+  background: #04050D;
+}
+
+.Solutions::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #F6F6F6;
+  clip-path: ellipse(370px 170px at 50% 0%);
+}
+
+body.dark .Solutions::before {
+  background: #3C3C3C;
+}
+
+.Solutions .title {
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+}
+
+.Solutions .title h2 {
+  font-size: 35px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  width: 800px;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+}
+
+body.dark .Solutions .title h2 {
+  color: #fff;
+}
+
+.Solutions .centrado {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Solutions .centrado .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: repeat(2, 280px);
+  padding: 20px;
+  gap: 10px 20px;
+  z-index: 1;
+}
+
+.Solutions .centrado .cards .glass {
+  position: relative;
+  background: rgba(187, 187, 187, 0.1);
+  backdrop-filter:blur(2px);
+  border-radius: 20px;
+  box-shadow: 0 4px 10px 0 #bdbdbd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  cursor: pointer;
+}
+
+body.dark .Solutions .centrado .cards .glass {
+  background: rgba(126, 126, 126, 0.1);
+  backdrop-filter:blur(2px);
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, .5);
+  border-top: 1px solid #888;
+  border-left: 1px solid #888;
+}
+
+.Solutions .centrado .cards .glass p {
+  color: #000;
+  font-family: 'Rubik', sans-serif;
+  font-size: 20px;
+  width: 120px;
+  text-align: center;
+  font-weight: 900;
+  z-index: 1;
+  transition: .2s;
+  opacity: 0;
+}
+
+body.dark .Solutions .centrado .cards .glass p {
+  color: #fff;
+}
